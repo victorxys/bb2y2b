@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  # 开发环境只启动数据库和Redis
+  postgres:
+    image: postgres:15-alpine
+    container_name: bb2y2b-postgres-dev
+    environment:
+      POSTGRES_DB: bb2y2b
+      POSTGRES_USER: bb2y2b
+      POSTGRES_PASSWORD: bb2y2b
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+    networks:
+      - bb2y2b-dev-network
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: bb2y2b-redis-dev
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_dev_data:/data
+    networks:
+      - bb2y2b-dev-network
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+volumes:
+  postgres_dev_data:
+  redis_dev_data:
+
+networks:
+  bb2y2b-dev-network:
+    driver: bridge

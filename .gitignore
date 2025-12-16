@@ -1,0 +1,139 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+myenv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+logs/
+log/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific - downloaded content
+video/
+cover/
+srt/
+merged_video/
+output/
+uploaded/
+screenshot/
+wait_2_download/
+
+# Project specific - temporary files
+*.tmp
+*.temp
+qrcode.png
+output.jpg
+
+# Project specific - credentials and sensitive data
+cookie.json
+credentials.json
+your_credentials_file.json
+token.pickle
+*.csv
+sftp-config.json
+
+# Project specific - old/backup directories
+bk/
+bb2y2b-frontend/
+autoview/
+proxy_test/
+source/
+story/
+tools/
+WatermarkRemover/
+
+# Project specific - legacy Python scripts (keep only the new FastAPI backend)
+auto_play.py
+b_update_ytb_video.py
+batch_download.py
+clip_video.py
+config.py
+cpu_load.py
+download_link.py
+downloadspace.py
+functions.py
+get_video_from_search.py
+get_video_from_space.py
+insert_youtube.py
+install_package.py
+merge_video.py
+move_video_watermark.py
+qr_login.py
+redownload_ytb_video.py
+scan_space_list.py
+set_volum.py
+simple_qr_login.py
+user_agents.txt
+ytb_titles.py
+
+# Backend specific
+bb2y2b-backend/backend*.log
+bb2y2b-backend/bb2y2b.db
+bb2y2b-backend/.env
+bb2y2b-backend/BV*.mp4
+bb2y2b-backend/BV*.mp3
